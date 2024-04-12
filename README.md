@@ -1,5 +1,5 @@
 # edushareETEPD2024
-A Galeria de Projetos é um sistema que permite aos estudantes compatilharem os projetos desenvolvidos na escola técnica, funcionando como portfólio que exibe os resultados finais desses projetos aos demais membros da comunidade escolar.
+Edushare é um sistema de Galeria de Projetos que permite aos estudantes compatilharem os projetos desenvolvidos na escola técnica, funcionando como portfólio que exibe os resultados finais desses projetos aos demais membros da comunidade escolar.
 
 Repositório do projeto integrador da ETE Porto Digital 2024.1
 
