@@ -27,7 +27,7 @@ Esse projeto será usado pela Escola Técnica Estadual Porto Digital
 
 ## Stack utilizada
 
-**Front-end:** React native
+**Front-end:** React native, Expo
 
 **Back-end:** Nodejs, Express e MySQL
 
