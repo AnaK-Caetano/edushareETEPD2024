@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "edushare",
+    "slug": "edushare",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png", //ícone do sistema
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png", // imagem de quando abre o app pela primeira vez
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
