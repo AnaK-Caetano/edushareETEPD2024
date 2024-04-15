@@ -13,7 +13,6 @@ Repositório do projeto integrador da ETE Porto Digital 2024.1
 | [Jonadabe Santos](https://github.com/JonnadabeSantos) |jjss@etepd.com|
 | [Mariana Gonçalo](https://github.com/Mariianah-Santos)|mgs@etepd.com|
 | Pedro Henrique Marques| Phms@etepd.com |
-| Rahauny Nogueira | rans@etepd.com |
 | Thyago Henrike | thsb@etepd.com  |
 | [Victor Pereira](https://github.com/victorPereira2) | vps@etepd.com|
 
