@@ -1,5 +1,5 @@
 # edushareETEPD2024
-A Galeria de Projetos é um sistema que permite aos estudantes compatilharem os projetos desenvolvidos na escola técnica, funcionando como portfólio que exibe os resultados finais desses projetos aos demais membros da comunidade escolar.
+Edushare é um sistema de Galeria de Projetos que permite aos estudantes compatilharem os projetos desenvolvidos na escola técnica, funcionando como portfólio que exibe os resultados finais desses projetos aos demais membros da comunidade escolar.
 
 Repositório do projeto integrador da ETE Porto Digital 2024.1
 
@@ -13,7 +13,6 @@ Repositório do projeto integrador da ETE Porto Digital 2024.1
 | [Jonadabe Santos](https://github.com/JonnadabeSantos) |jjss@etepd.com|
 | [Mariana Gonçalo](https://github.com/Mariianah-Santos)|mgs@etepd.com|
 | Pedro Henrique Marques| Phms@etepd.com |
-| Rahauny Nogueira | rans@etepd.com |
 | Thyago Henrike | thsb@etepd.com  |
 | [Victor Pereira](https://github.com/victorPereira2) | vps@etepd.com|
 
@@ -27,7 +26,7 @@ Esse projeto será usado pela Escola Técnica Estadual Porto Digital
 
 ## Stack utilizada
 
-**Front-end:** React native
+**Front-end:** React native, Expo
 
 **Back-end:** Nodejs, Express e MySQL
 
@@ -84,6 +83,10 @@ Inicie o servidor
 
 
 ## Documentação
+
+[Documentação projeto](https://docs.google.com/document/d/1mUfi_to69CI72wgCA08u-GLUWeYXGCgUe5fOkx7VCVc/edit?usp=sharing)
+
+[Protótipo Figma](https://www.figma.com/file/J3VmFberZqdBuQjupKMt8k/PI3?type=design&node-id=0-1&mode=design)
 
 [Documentação Node](https://nodejs.org/en/download/package-manager)
 
