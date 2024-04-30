@@ -48,7 +48,7 @@ Atualmente não precisa configurar o expo e nem instalar o expo-cli
 
 
 ```bash
-  npx creat-expo-app nome-projeto --template 
+  npx create-expo-app nome-projeto --template 
   cd nome-projeto
   npx expo start
 ```
