@@ -6,10 +6,9 @@ import LoginScreen from '../screens/auth/LoginScreen';
 
 const Stack = createNativeStackNavigator();
 
-
 const AuthStack = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName="Login">
         <Stack.Screen name="Login" component={LoginScreen}></Stack.Screen>
         <Stack.Screen name="Cadastro" component={SignupScreen}></Stack.Screen>
     </Stack.Navigator>

@@ -13,6 +13,7 @@ const App = () => {
       <StatusBar style="auto"></StatusBar>
         <Stack.Navigator initialRouteName="AuthStack">
           <Stack.Screen name="AuthStack" component={AuthStack}></Stack.Screen>
+          <Stack.Screen name="AppStack" component={TabRoutes}></Stack.Screen>
         </Stack.Navigator>
     </NavigationContainer>
 
