@@ -9,7 +9,7 @@ const Stack = createStackNavigator();
 export default function NavigationManager() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerShown:false}}>
         <Stack.Screen name="Login" component={StackNavigator} />
         <Stack.Screen name="Home" component={TabNavigator} />
       </Stack.Navigator>
