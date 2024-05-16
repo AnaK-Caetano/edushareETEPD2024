@@ -4,7 +4,8 @@ import { View, Text, Button } from 'react-native';
 function Login({ navigation }) {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Text>Login</Text>
+      <Text>Edushare</Text>
+      <Text>Seja Bem-Vindo (a)</Text>
       <Button
         title="Cadastre-se"
         onPress={() => navigation.navigate('Register')}
