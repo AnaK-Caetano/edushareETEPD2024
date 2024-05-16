@@ -1,16 +1,21 @@
-import React from 'react'
-import { Text, StyleSheet, View } from 'react-native'
+import React from 'react';
+import { Text, View, Button } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const LoginScreen = () => {
+    const navigation = useNavigation();
+
+    const handleLogin = () => {
+        navigation.navigate('HomeScreen');
+      };
+
     return(
-        <View style = {styles.container}>
-            <Text> Tela de Login</Text>
+        <View>
+            <Text>Login Screen</Text>
+            <Button title="Login" onPress={handleLogin} />
         </View>
     );
 }
 
-const styles = StyleSheet.create({
-    container: {}
-}) 
 
 export default LoginScreen; 

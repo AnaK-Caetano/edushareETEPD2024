@@ -50,6 +50,8 @@ Atualmente não precisa configurar o expo e nem instalar o expo-cli
 ```bash
   npx create-expo-app nome-projeto --template 
   cd nome-projeto
+  npm install expo@50 //Opcional (instala o expo skd50)
+
   npx expo start
 ```
 
