@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useFonts } from 'expo-font';
-import CustomButton from '../../components/Button/Button';
-import Input from '../../components/Input/input';
+import CustomButton from '../../components/Button/CustomButton';
+import Input from '../../components/Input/Input';
 
 const Login = ({ navigation }) => {
   const [fontsLoaded] = useFonts({

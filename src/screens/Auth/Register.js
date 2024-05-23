@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useFonts } from 'expo-font';
-import CustomButton from '../../components/Button/Button';
-import Input from '../../components/Input/input';
+import CustomButton from '../../components/Button/CustomButton';
+import Input from '../../components/Input/Input';
 
 
 const Register = ({ navigation }) => {
@@ -18,13 +18,13 @@ const Register = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Cadastre-se</Text>
-      <Text style={styles.text}>Nome de usuário (a)</Text>
+      <Text style={[styles.text, { textAlign: 'left' }]}>Nome de usuário (a)</Text>
       <Input placeholder="Ex. Samuel Cesar"></Input>
-      <Text style={styles.text}>Nome Completo</Text>
+      <Text style={[styles.text, { textAlign: 'left' }]}>Nome Completo</Text>
       <Input placeholder="Ex. Samuel Cesar de Oliveira"></Input>
-      <Text style={styles.text}>E-mail institucional</Text>
+      <Text style={[styles.text, { textAlign: 'left' }]}>E-mail institucional</Text>
       <Input placeholder="Ex. Samuel Cesar de Oliveira"></Input>
-      <Text style={styles.text}>Senha</Text>
+      <Text style={[styles.text, { textAlign: 'left' }]}>Senha</Text>
       <Input placeholder="**************"></Input>
 
       <CustomButton
@@ -56,6 +56,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Bold',
     color: "#535272",
   }, 
+  
   buttonLogin: {
     width: 100, 
     height: 46,
