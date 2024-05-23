@@ -59,8 +59,9 @@ const styles = StyleSheet.create({
   buttonLogin: {
     width: 100, 
     height: 46,
-    fontSize: 20,
+    fontSize: 15,
     marginTop: 20, 
+    marginBottom: 20, 
   },
   buttonRegister: {
     marginTop: 10, 
