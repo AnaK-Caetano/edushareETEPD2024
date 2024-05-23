@@ -6,9 +6,9 @@ import Projects from '../screens/App/Projects';
 
 const Tab = createBottomTabNavigator();
 
-function TabNavigator() {
+const TabNavigator = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{headerShown:false}}>
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Projects" component={Projects} />
       <Tab.Screen name="Profile" component={Profile} />
