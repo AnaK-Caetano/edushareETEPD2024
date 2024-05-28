@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { View, Text, Image, StyleSheet, Dimensions } from 'react-native';
-import PropTypes from 'prop-types';
+import { View, Text, StyleSheet, Image, Dimensions } from 'react-native';
+import { useFonts } from 'expo-font';
+
+
+
 
 const { width } = Dimensions.get('window');
 const cardWidth = (380 / 418) * width;
@@ -8,12 +11,21 @@ const cardWidth = (380 / 418) * width;
 const Card = ({ user, text, tituloProjeto }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
+  const [fontsLoaded] = useFonts({
+    'Poppins-Regular': require('../../../assets/fonts/Poppins-Regular.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <View style={styles.card}>
       <Image
-        source={{ uri: user.foto }}
         style={styles.cardFoto}
-        onLoad={() => setIsLoaded(true)}
+        contentFit="cover"
+        source={require('../../../assets/userImage.png')}
+        // onLoad={() => setIsLoaded(true)}
       />
       {isLoaded && (
         <View style={styles.cardContent}>
@@ -29,14 +41,7 @@ const Card = ({ user, text, tituloProjeto }) => {
   );
 };
 
-Card.propTypes = {
-  user: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    foto: PropTypes.string.isRequired
-  }).isRequired,
-  tituloProjeto: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired
-};
+
 
 const styles = StyleSheet.create({
   card: {
