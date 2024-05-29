@@ -18,12 +18,16 @@ const Register = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Cadastre-se</Text>
+      
       <Text style={[styles.text, { textAlign: 'left' }]}>Nome de usuário (a)</Text>
       <Input placeholder="Ex. Samuel Cesar"></Input>
+      
       <Text style={[styles.text, { textAlign: 'left' }]}>Nome Completo</Text>
       <Input placeholder="Ex. Samuel Cesar de Oliveira"></Input>
+      
       <Text style={[styles.text, { textAlign: 'left' }]}>E-mail institucional</Text>
       <Input placeholder="Ex. Samuel Cesar de Oliveira"></Input>
+      
       <Text style={[styles.text, { textAlign: 'left' }]}>Senha</Text>
       <Input placeholder="**************"></Input>
 
@@ -33,7 +37,10 @@ const Register = ({ navigation }) => {
         buttonStyle={styles.buttonLogin}
       />
        <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-        <Text style={{ marginTop: 10, fontFamily: 'Poppins-Light'} }>Já tem uma conta? <Text style={{ fontWeight: 'bold', color: '#535272'}}>Faça seu login</Text></Text>
+       <Text style={styles.buttonTextContainer}>
+       Já tem uma conta?{' '}
+          <Text style={styles.buttonTextLink}>Faça seu login</Text>
+        </Text>
       </TouchableOpacity>
     </View>
   );
@@ -66,7 +73,15 @@ const styles = StyleSheet.create({
   },
   buttonRegister: {
     marginTop: 10, 
-  }
+  },
+  buttonTextContainer: {
+    marginTop: 10,
+    fontFamily: 'Poppins-Light',
+  },
+  buttonTextLink: {
+    fontWeight: 'bold',
+    color: '#535272',
+  },
 });
 
 export default Register;

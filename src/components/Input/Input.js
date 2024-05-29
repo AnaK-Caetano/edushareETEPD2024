@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import { View, StyleSheet, Dimensions} from 'react-native';
+import { View, StyleSheet, Dimensions, TextInput} from 'react-native';
 import { useFonts } from 'expo-font';
-import { TextInput } from 'react-native-gesture-handler';
 
 
 const { width } = Dimensions.get('window');
@@ -28,9 +27,10 @@ const Input = ({ placeholder }) => {
         ]}
         onFocus={() => setIsFocused(true)}
         onBlur={() => setIsFocused(false)}
-        onChangeText={(text) => setValue(text)}
+        onChangeText={setValue}
         value={value}
-        placeholder={isFocused ? '' : placeholder}
+        placeholder={placeholder}
+        accessibilityLabel={`Campo de ${placeholder}`}
         placeholderTextColor='#C2C2C2'
       />
     </View>
